@@ -1,0 +1,60 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Podłącz kontroler Triki",
+        "description": "Wybierz wykryty kontroler Triki BLE.",
+        "data": {
+          "address": "Urządzenie"
+        }
+      },
+      "bluetooth_confirm": {
+        "title": "Wykryto kontroler Triki",
+        "description": "Czy skonfigurować {name}?"
+      }
+    },
+    "abort": {
+      "already_configured": "Ten kontroler Triki jest już skonfigurowany.",
+      "no_devices_found": "Nie znaleziono żadnego kontrolera Triki. Upewnij się, że jest włączony i w zasięgu Bluetooth.",
+      "not_supported": "To urządzenie Bluetooth nie wygląda na kontroler Triki."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Opcje Triki",
+        "data": {
+          "sample_rate": "Częstotliwość próbkowania IMU (Hz)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "battery": { "name": "Bateria" },
+      "firmware": { "name": "Wersja firmware" },
+      "rssi": { "name": "Siła sygnału" },
+      "accel_x": { "name": "Akcelerometr X" },
+      "accel_y": { "name": "Akcelerometr Y" },
+      "accel_z": { "name": "Akcelerometr Z" },
+      "gyro_x": { "name": "Żyroskop X" },
+      "gyro_y": { "name": "Żyroskop Y" },
+      "gyro_z": { "name": "Żyroskop Z" }
+    },
+    "binary_sensor": {
+      "button": { "name": "Przycisk" },
+      "connectivity": { "name": "Połączenie" },
+      "pos_up": { "name": "Pozycja: góra" },
+      "pos_down": { "name": "Pozycja: dół" },
+      "pos_horizontal": { "name": "Pozycja: poziom" },
+      "pos_vertical": { "name": "Pozycja: pion" },
+      "pos_side_left": { "name": "Pozycja: bok (lewo)" },
+      "pos_side_right": { "name": "Pozycja: bok (prawo)" },
+      "rotating_right": { "name": "Obrót w prawo" },
+      "rotating_left": { "name": "Obrót w lewo" }
+    },
+    "switch": {
+      "led": { "name": "LED" }
+    }
+  }
+}

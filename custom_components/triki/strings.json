@@ -1,0 +1,60 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect a Triki controller",
+        "description": "Choose a discovered Triki BLE controller.",
+        "data": {
+          "address": "Device"
+        }
+      },
+      "bluetooth_confirm": {
+        "title": "Triki controller discovered",
+        "description": "Do you want to set up {name}?"
+      }
+    },
+    "abort": {
+      "already_configured": "This Triki controller is already configured.",
+      "no_devices_found": "No Triki controllers were found. Make sure it is powered on and in Bluetooth range.",
+      "not_supported": "This Bluetooth device does not look like a Triki controller."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Triki options",
+        "data": {
+          "sample_rate": "IMU sample rate (Hz)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "battery": { "name": "Battery" },
+      "firmware": { "name": "Firmware version" },
+      "rssi": { "name": "Signal strength" },
+      "accel_x": { "name": "Accelerometer X" },
+      "accel_y": { "name": "Accelerometer Y" },
+      "accel_z": { "name": "Accelerometer Z" },
+      "gyro_x": { "name": "Gyroscope X" },
+      "gyro_y": { "name": "Gyroscope Y" },
+      "gyro_z": { "name": "Gyroscope Z" }
+    },
+    "binary_sensor": {
+      "button": { "name": "Button" },
+      "connectivity": { "name": "Connectivity" },
+      "pos_up": { "name": "Position: up" },
+      "pos_down": { "name": "Position: down" },
+      "pos_horizontal": { "name": "Position: horizontal" },
+      "pos_vertical": { "name": "Position: vertical" },
+      "pos_side_left": { "name": "Position: on its side (left)" },
+      "pos_side_right": { "name": "Position: on its side (right)" },
+      "rotating_right": { "name": "Rotating right" },
+      "rotating_left": { "name": "Rotating left" }
+    },
+    "switch": {
+      "led": { "name": "LED" }
+    }
+  }
+}

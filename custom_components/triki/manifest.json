@@ -1,0 +1,16 @@
+{
+  "domain": "triki",
+  "name": "Triki (Żabka)",
+  "codeowners": ["@orionas97"],
+  "config_flow": true,
+  "dependencies": ["bluetooth"],
+  "bluetooth": [
+    { "local_name": "Triki*", "connectable": true },
+    { "local_name": "TRIKI*", "connectable": true }
+  ],
+  "documentation": "https://github.com/orionas97/triki_unofficial",
+  "iot_class": "local_push",
+  "issue_tracker": "https://github.com/orionas97/triki_unofficial/issues",
+  "requirements": ["bleak", "bleak-retry-connector"],
+  "version": "0.6.7"
+}
